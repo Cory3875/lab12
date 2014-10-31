@@ -29,7 +29,10 @@ class MyApp:
 		self.button3.grid(row=0,column=2)	  ### (3)
 			
 	
-		
+		self.button4 = Button(self.myContainer1)
+		self.button4.configure(text="Goodbye!")  
+		self.button4.configure(background="blue")               
+		self.button4.grid(row=0,column=3)
 root = Tk()
 myapp = MyApp(root)
 root.mainloop()
